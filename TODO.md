@@ -1,0 +1,4 @@
+- [ ] make box around balls
+- [ ] make transpartent object
+- [x] cast shadows
+- [ ] mirror like ball #make colour 1, 1, 1 and relectivity 1

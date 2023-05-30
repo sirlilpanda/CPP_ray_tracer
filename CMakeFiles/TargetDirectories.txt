@@ -1,0 +1,3 @@
+/home/sirlilpanda/Documents/cosc_assigment_2/CMakeFiles/RayTracer.out.dir
+/home/sirlilpanda/Documents/cosc_assigment_2/CMakeFiles/edit_cache.dir
+/home/sirlilpanda/Documents/cosc_assigment_2/CMakeFiles/rebuild_cache.dir
