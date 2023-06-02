@@ -299,7 +299,19 @@ CMakeFiles/RayTracer.out.dir/RayTracer.cpp.o: \
  /home/sirlilpanda/Documents/cosc_assigment_2/Sphere.h \
  /home/sirlilpanda/Documents/cosc_assigment_2/SceneObject.h \
  /home/sirlilpanda/Documents/cosc_assigment_2/Ray.h \
+ /home/sirlilpanda/Documents/cosc_assigment_2/Plane.h \
+ /home/sirlilpanda/Documents/cosc_assigment_2/Cone.h \
+ /home/sirlilpanda/Documents/cosc_assigment_2/Cylinder.h \
  /usr/include/GL/freeglut.h /usr/include/GL/freeglut_std.h \
  /usr/include/GL/gl.h /usr/include/GL/glext.h \
  /usr/include/KHR/khrplatform.h /usr/include/GL/glu.h \
- /usr/include/c++/11/stdlib.h /usr/include/GL/freeglut_ext.h
+ /usr/include/c++/11/stdlib.h /usr/include/GL/freeglut_ext.h \
+ /usr/include/glm/gtc/random.hpp /usr/include/glm/gtc/random.inl \
+ /usr/include/c++/11/ctime /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/bits/unique_ptr.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
+ /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h

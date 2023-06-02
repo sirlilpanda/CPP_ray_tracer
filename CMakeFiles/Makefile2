@@ -81,12 +81,12 @@ clean: CMakeFiles/RayTracer.out.dir/clean
 CMakeFiles/RayTracer.out.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RayTracer.out.dir/build.make CMakeFiles/RayTracer.out.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RayTracer.out.dir/build.make CMakeFiles/RayTracer.out.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sirlilpanda/Documents/cosc_assigment_2/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target RayTracer.out"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sirlilpanda/Documents/cosc_assigment_2/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target RayTracer.out"
 .PHONY : CMakeFiles/RayTracer.out.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RayTracer.out.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sirlilpanda/Documents/cosc_assigment_2/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sirlilpanda/Documents/cosc_assigment_2/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RayTracer.out.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sirlilpanda/Documents/cosc_assigment_2/CMakeFiles 0
 .PHONY : CMakeFiles/RayTracer.out.dir/rule

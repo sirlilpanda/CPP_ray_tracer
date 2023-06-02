@@ -19,6 +19,7 @@ class SceneObject
 {
 protected:
 	glm::vec3 color_ = glm::vec3(1);  //material color
+	bool hastxt_ = false;
 	bool refl_ = false;  //reflectivity: true/false
 	bool refr_ = false;  //refractivity: true/false
 	bool spec_ = true;   //specularity: true/false

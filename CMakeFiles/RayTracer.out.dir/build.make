@@ -139,10 +139,38 @@ CMakeFiles/RayTracer.out.dir/Plane.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RayTracer.out.dir/Plane.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sirlilpanda/Documents/cosc_assigment_2/Plane.cpp -o CMakeFiles/RayTracer.out.dir/Plane.cpp.s
 
+CMakeFiles/RayTracer.out.dir/Cylinder.cpp.o: CMakeFiles/RayTracer.out.dir/flags.make
+CMakeFiles/RayTracer.out.dir/Cylinder.cpp.o: Cylinder.cpp
+CMakeFiles/RayTracer.out.dir/Cylinder.cpp.o: CMakeFiles/RayTracer.out.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sirlilpanda/Documents/cosc_assigment_2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RayTracer.out.dir/Cylinder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RayTracer.out.dir/Cylinder.cpp.o -MF CMakeFiles/RayTracer.out.dir/Cylinder.cpp.o.d -o CMakeFiles/RayTracer.out.dir/Cylinder.cpp.o -c /home/sirlilpanda/Documents/cosc_assigment_2/Cylinder.cpp
+
+CMakeFiles/RayTracer.out.dir/Cylinder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RayTracer.out.dir/Cylinder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sirlilpanda/Documents/cosc_assigment_2/Cylinder.cpp > CMakeFiles/RayTracer.out.dir/Cylinder.cpp.i
+
+CMakeFiles/RayTracer.out.dir/Cylinder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RayTracer.out.dir/Cylinder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sirlilpanda/Documents/cosc_assigment_2/Cylinder.cpp -o CMakeFiles/RayTracer.out.dir/Cylinder.cpp.s
+
+CMakeFiles/RayTracer.out.dir/Cone.cpp.o: CMakeFiles/RayTracer.out.dir/flags.make
+CMakeFiles/RayTracer.out.dir/Cone.cpp.o: Cone.cpp
+CMakeFiles/RayTracer.out.dir/Cone.cpp.o: CMakeFiles/RayTracer.out.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sirlilpanda/Documents/cosc_assigment_2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RayTracer.out.dir/Cone.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RayTracer.out.dir/Cone.cpp.o -MF CMakeFiles/RayTracer.out.dir/Cone.cpp.o.d -o CMakeFiles/RayTracer.out.dir/Cone.cpp.o -c /home/sirlilpanda/Documents/cosc_assigment_2/Cone.cpp
+
+CMakeFiles/RayTracer.out.dir/Cone.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RayTracer.out.dir/Cone.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sirlilpanda/Documents/cosc_assigment_2/Cone.cpp > CMakeFiles/RayTracer.out.dir/Cone.cpp.i
+
+CMakeFiles/RayTracer.out.dir/Cone.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RayTracer.out.dir/Cone.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sirlilpanda/Documents/cosc_assigment_2/Cone.cpp -o CMakeFiles/RayTracer.out.dir/Cone.cpp.s
+
 CMakeFiles/RayTracer.out.dir/TextureBMP.cpp.o: CMakeFiles/RayTracer.out.dir/flags.make
 CMakeFiles/RayTracer.out.dir/TextureBMP.cpp.o: TextureBMP.cpp
 CMakeFiles/RayTracer.out.dir/TextureBMP.cpp.o: CMakeFiles/RayTracer.out.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sirlilpanda/Documents/cosc_assigment_2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RayTracer.out.dir/TextureBMP.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sirlilpanda/Documents/cosc_assigment_2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RayTracer.out.dir/TextureBMP.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RayTracer.out.dir/TextureBMP.cpp.o -MF CMakeFiles/RayTracer.out.dir/TextureBMP.cpp.o.d -o CMakeFiles/RayTracer.out.dir/TextureBMP.cpp.o -c /home/sirlilpanda/Documents/cosc_assigment_2/TextureBMP.cpp
 
 CMakeFiles/RayTracer.out.dir/TextureBMP.cpp.i: cmake_force
@@ -160,6 +188,8 @@ RayTracer_out_OBJECTS = \
 "CMakeFiles/RayTracer.out.dir/SceneObject.cpp.o" \
 "CMakeFiles/RayTracer.out.dir/Sphere.cpp.o" \
 "CMakeFiles/RayTracer.out.dir/Plane.cpp.o" \
+"CMakeFiles/RayTracer.out.dir/Cylinder.cpp.o" \
+"CMakeFiles/RayTracer.out.dir/Cone.cpp.o" \
 "CMakeFiles/RayTracer.out.dir/TextureBMP.cpp.o"
 
 # External object files for target RayTracer.out
@@ -170,13 +200,15 @@ RayTracer.out: CMakeFiles/RayTracer.out.dir/Ray.cpp.o
 RayTracer.out: CMakeFiles/RayTracer.out.dir/SceneObject.cpp.o
 RayTracer.out: CMakeFiles/RayTracer.out.dir/Sphere.cpp.o
 RayTracer.out: CMakeFiles/RayTracer.out.dir/Plane.cpp.o
+RayTracer.out: CMakeFiles/RayTracer.out.dir/Cylinder.cpp.o
+RayTracer.out: CMakeFiles/RayTracer.out.dir/Cone.cpp.o
 RayTracer.out: CMakeFiles/RayTracer.out.dir/TextureBMP.cpp.o
 RayTracer.out: CMakeFiles/RayTracer.out.dir/build.make
 RayTracer.out: /usr/lib/x86_64-linux-gnu/libGL.so
 RayTracer.out: /usr/lib/x86_64-linux-gnu/libGLU.so
 RayTracer.out: /usr/lib/x86_64-linux-gnu/libglut.so
 RayTracer.out: CMakeFiles/RayTracer.out.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sirlilpanda/Documents/cosc_assigment_2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable RayTracer.out"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sirlilpanda/Documents/cosc_assigment_2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable RayTracer.out"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RayTracer.out.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

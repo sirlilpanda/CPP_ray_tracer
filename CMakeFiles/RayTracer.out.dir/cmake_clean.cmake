@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/RayTracer.out.dir/Cone.cpp.o"
+  "CMakeFiles/RayTracer.out.dir/Cone.cpp.o.d"
+  "CMakeFiles/RayTracer.out.dir/Cylinder.cpp.o"
+  "CMakeFiles/RayTracer.out.dir/Cylinder.cpp.o.d"
   "CMakeFiles/RayTracer.out.dir/Plane.cpp.o"
   "CMakeFiles/RayTracer.out.dir/Plane.cpp.o.d"
   "CMakeFiles/RayTracer.out.dir/Ray.cpp.o"

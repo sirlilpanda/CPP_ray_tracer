@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/sirlilpanda/Documents/cosc_assigment_2/Cone.cpp" "CMakeFiles/RayTracer.out.dir/Cone.cpp.o" "gcc" "CMakeFiles/RayTracer.out.dir/Cone.cpp.o.d"
+  "/home/sirlilpanda/Documents/cosc_assigment_2/Cylinder.cpp" "CMakeFiles/RayTracer.out.dir/Cylinder.cpp.o" "gcc" "CMakeFiles/RayTracer.out.dir/Cylinder.cpp.o.d"
   "/home/sirlilpanda/Documents/cosc_assigment_2/Plane.cpp" "CMakeFiles/RayTracer.out.dir/Plane.cpp.o" "gcc" "CMakeFiles/RayTracer.out.dir/Plane.cpp.o.d"
   "/home/sirlilpanda/Documents/cosc_assigment_2/Ray.cpp" "CMakeFiles/RayTracer.out.dir/Ray.cpp.o" "gcc" "CMakeFiles/RayTracer.out.dir/Ray.cpp.o.d"
   "/home/sirlilpanda/Documents/cosc_assigment_2/RayTracer.cpp" "CMakeFiles/RayTracer.out.dir/RayTracer.cpp.o" "gcc" "CMakeFiles/RayTracer.out.dir/RayTracer.cpp.o.d"
