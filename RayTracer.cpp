@@ -145,9 +145,9 @@ glm::vec3 trace(Ray ray, int step){
 				printf("c : %f\n", 1-sceneObjects[shadowRay.index]->getRefractionCoeff());
 				color -= sceneObjects[shadowRay.index]->getRefractionCoeff()*c.x;
 			} else {
-				c *= sceneObjects[shadowRay.index]->getRefractionCoeff();
 				glm::vec3 c_max = glm::vec3(std::max({c.x, c.y, c.z}));
 				color -= c_max - c;
+				color *= sceneObjects[shadowRay.index]->getRefractionCoeff();
 			}				
 		}
 		if (sceneObjects[shadowRay.index]->isTransparent() && sceneObjects[ray.index] != sceneObjects[shadowRay.index]){
@@ -157,9 +157,9 @@ glm::vec3 trace(Ray ray, int step){
 			}else if (c.x == c.y && c.y == c.z){
 				color -= sceneObjects[shadowRay.index]->getTransparencyCoeff()*c.x;
 			} else{
-				c *= sceneObjects[shadowRay.index]->getTransparencyCoeff();
 				glm::vec3 c_max = glm::vec3(std::max({c.x, c.y, c.z}));
 				color -= c_max - c;
+				color *= sceneObjects[shadowRay.index]->getTransparencyCoeff();
 			}
 		}
 		if (sceneObjects[shadowRay.index]->isRefractive() || sceneObjects[shadowRay.index]->isTransparent()){
@@ -388,8 +388,8 @@ void initialize()
 
 	buildBox(false);
 	// showGlobe();
-	showConeExample();
-	// showCylinderExample();
+	// showConeExample();
+	showCylinderExample();
 	// showSphereExample(); 
 }
 

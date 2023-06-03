@@ -71,7 +71,7 @@ glm::vec2 Cylinder::getTextcoq(glm::vec3 hit){
     glm::vec3 n = hit - center;
     if (n.y >= hight){
         n = glm::normalize(n);    
-        return glm::vec2(0, n.z); 
+        return glm::vec2(1, n.x); 
     }
     float v = (n.y)/hight;
     n = glm::normalize(n);    
