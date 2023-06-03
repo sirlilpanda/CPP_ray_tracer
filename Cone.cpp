@@ -81,9 +81,7 @@ float Cone::intersect(glm::vec3 p0, glm::vec3 dir){
 
 glm::vec3 Cone::normal(glm::vec3 p){
     float h = hight_lim > hight? hight:hight_lim; 
-    printf("p.y : %f\n", p.y);
     if (p.y >= center.y + hight_lim){
-        puts("worked");
         return glm::vec3(0, 1, 0);
     }
     float r = sqrt((p.x-center.x)*(p.x-center.x) + (p.z-center.z)*(p.z-center.z));

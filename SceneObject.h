@@ -13,13 +13,14 @@
 #ifndef H_SOBJECT
 #define H_SOBJECT
 #include <glm/glm.hpp>
-
+#include "TextureBMP.h"
 
 class SceneObject 
 {
 protected:
 	glm::vec3 color_ = glm::vec3(1);  //material color
-	bool hastxt_ = false;
+	bool text_ = false;
+	TextureBMP texture;
 	bool refl_ = false;  //reflectivity: true/false
 	bool refr_ = false;  //refractivity: true/false
 	bool spec_ = true;   //specularity: true/false
@@ -32,9 +33,9 @@ protected:
 public:
 	SceneObject() {}
     virtual float intersect(glm::vec3 p0, glm::vec3 dir) = 0;
+	virtual glm::vec2 getTextcoq(glm::vec3 hit);
 	virtual glm::vec3 normal(glm::vec3 pos) = 0;
 	virtual ~SceneObject() {}
-
 	glm::vec3 lighting(glm::vec3 lightPos, glm::vec3 viewVec, glm::vec3 hit);
 	void setColor(glm::vec3 col);
 	void setReflectivity(bool flag);
@@ -45,7 +46,9 @@ public:
 	void setSpecularity(bool flag);
 	void setTransparency(bool flag);
 	void setTransparency(bool flag, float tran_coeff);
+	void setTexture(const char* filename);
 	glm::vec3 getColor();
+	glm::vec3 getColor(float s, float t);
 	float getReflectionCoeff();
 	float getRefractionCoeff();
 	float getTransparencyCoeff();
@@ -54,6 +57,7 @@ public:
 	bool isReflective();
 	bool isRefractive();
 	bool isSpecular();
+	bool isTextured();
 	bool isTransparent();
 };
 

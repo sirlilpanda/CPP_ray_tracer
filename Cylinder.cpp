@@ -2,12 +2,12 @@
 #include <math.h>
 #include <stdio.h>
 
+
 template<class T>
 const T& min(const T& a, const T& b)
 {
     return (b < a) ? b : a;
 }
-
 
 static void printVec(glm::vec3 c){
 	printf("x : %f, y : %f, z : %f\n", c.x, c.y, c.z);
@@ -38,12 +38,11 @@ float Cylinder::intersect(glm::vec3 p0, glm::vec3 dir){
 
     double t1 = (-b-sqrt(det))/(2*a);
     double t2 = (-b+sqrt(det))/(2*a);
-    double t;
-    if (t1 < t2) t = t1;
-    else t = t2;
+    glm::vec3 temp(0); 
     
-    glm::vec temp = p0 + (float) t *dir; 
- 
+    if (t1 < t2) temp = p0 + (float) t1 *dir;
+    else temp = p0 + (float) t2 *dir;
+    
     if ((temp.y >= center.y) && (temp.y <= center.y+hight)){
         return t1;
     } else if (temp.y > center.y + hight){
@@ -77,3 +76,16 @@ glm::vec3 Cylinder::normal(glm::vec3 p){
     norm /= radius;
     return norm;
 };
+
+glm::vec2 Cylinder::getTextcoq(glm::vec3 hit){
+    static float max = 0;
+    glm::vec3 n = hit - center;
+    if (n.y >= hight){
+        n = glm::normalize(n);    
+        return glm::vec2(0, n.z); 
+    }
+    float v = (n.y)/hight;
+    n = glm::normalize(n);    
+    float u = (atan2(n.x, n.z)+M_PI)/(2*M_PI);
+    return glm::vec2(u, v);
+}

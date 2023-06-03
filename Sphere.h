@@ -31,6 +31,8 @@ public:
 
 	glm::vec3 normal(glm::vec3 p);
 
+	glm::vec2 getTextcoq(glm::vec3 hit);
+
 };
 
 #endif //!H_SPHERE

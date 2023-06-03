@@ -15,8 +15,8 @@ TextureBMP::TextureBMP(const char* filename)
 	imageHgt = 0;
     if (loadBMPImage(filename)) {
 		cout << "Image " << filename << "  loaded successfully." << endl;
-		//cout << "Width = " << imageWid << "  Height = " << imageHgt <<
-		//	"  Channels = " << imageChnls << endl;
+		cout << "Width = " << imageWid << "  Height = " << imageHgt <<
+			"  Channels = " << imageChnls << endl;
     } else {
         cerr << "Could not load image.";
     }
@@ -28,10 +28,13 @@ TextureBMP::TextureBMP(const char* filename)
 glm::vec3 TextureBMP::getColorAt(float s, float t)
 {
 	if(imageWid == 0 || imageHgt == 0) return glm::vec3(0);
-    int i = (int) (s * imageWid);  //pixel coordinates
-    int j = (int) (t * imageHgt);
+    int i = (unsigned int) (s * imageWid);  //pixel coordinates
+    int j = (unsigned int) (t * imageHgt);
+    // printf("width, s, i:%d, %f, %d\n",imageWid, s, i);
+    // printf("hight, t, j:%d, %f, %d\n",imageHgt, t, j);
 	if(i < 0 || i > imageWid-1 || j < 0 || j > imageHgt-1) return glm::vec3(0);
     int index = ((j * imageWid) + i) * imageChnls;
+
 
     int r = imageData[index];
     int g = imageData[index + 1];

@@ -28,6 +28,7 @@ public:
 	Cylinder(glm::vec3 c, float r, float h) : center(c), radius(r), hight(h){}
 	float intersect(glm::vec3 p0, glm::vec3 dir);
 	glm::vec3 normal(glm::vec3 p);
+	glm::vec2 getTextcoq(glm::vec3 hit);
 
 };
 

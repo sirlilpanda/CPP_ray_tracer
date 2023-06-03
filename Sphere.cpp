@@ -43,3 +43,10 @@ glm::vec3 Sphere::normal(glm::vec3 p)
     n = glm::normalize(n);
     return n;
 }
+
+glm::vec2 Sphere::getTextcoq(glm::vec3 hit){
+    glm::vec3 n = glm::normalize(hit - center);
+    float u = atan2(n.x, n.z) / (2*M_PI) + 0.5;
+    float v = n.y * 0.5 + 0.5;
+    return glm::vec2(u, v);
+}
