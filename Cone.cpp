@@ -61,19 +61,20 @@ float Cone::intersect(glm::vec3 p0, glm::vec3 dir){
 
     double t1 = (-b-sqrt(det))/(2*a);
     double t2 = (-b+sqrt(det))/(2*a);
-    double t;
-
-    if (t1>t2) t = t2;
-    else t = t1;
+    glm::vec3 temp(0);
     
-    float r = p0.y + t*dir.y;
-
-    if ((r >= center.y) && (r <= center.y+hight_lim)){
-        return t;
+    if (t1 < t2) temp = p0 + (float) t1 *dir;
+    else temp = p0 + (float) t2 *dir;
+    
+    if ((temp.y >= center.y) && (temp.y <= center.y+hight_lim)){
+        // if its in the normal reigon of the cylinder then it intersects
+        return t1;
     }
     if (((p0.y + t2 * dir.y) < center.y + hight_lim) && ((p0.y + t1 * dir.y) > center.y + hight_lim)){
+        // checks to see if t1 is above the hight and t2 is below the hight
         return t2-t1;
     };
+    // if nothing works then it doesnt intersect
     return -1;
 
 }

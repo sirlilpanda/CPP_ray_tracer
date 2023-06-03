@@ -25,7 +25,7 @@
 using namespace std;
 
 const float EDIST = 40.0;
-const int NUMDIV = 1000;
+const int NUMDIV = 500;
 const int MAX_STEPS = 6;
 const float XMIN = -10.0;
 const float XMAX = 10.0;
@@ -388,9 +388,9 @@ void initialize()
 
 	buildBox(false);
 	// showGlobe();
-	// showConeExample();
+	showConeExample();
 	// showCylinderExample();
-	showSphereExample(); 
+	// showSphereExample(); 
 }
 
 int main(int argc, char *argv[]) {

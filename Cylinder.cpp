@@ -44,26 +44,15 @@ float Cylinder::intersect(glm::vec3 p0, glm::vec3 dir){
     else temp = p0 + (float) t2 *dir;
     
     if ((temp.y >= center.y) && (temp.y <= center.y+hight)){
-        return t1;
-    } else if (temp.y > center.y + hight){
-        if ((p0.y + t2 * dir.y) <= center.y + hight){
-            return t2-t1;
-        }
+        // if its in the normal reigon of the cylinder then it intersects
+        return t1; 
+    } else if ((temp.y > center.y + hight) && ((p0.y + t2 * dir.y) <= center.y + hight)){
+        // checks to see if t1 is above the hight and t2 is below the hight
+        return t2-t1;
     }
 
+    // if nothing works then it doesnt intersect
     return -1;
-
-    // if (((t1*dir.y + p0.y) > center.y+hight) && ((t2*dir.y + p0.y) < center.y+hight)){
-    //     t1 = ((center.y+hight-p0.y));
-    // } else if (temp.y < center.y || temp.y > center.y+hight){
-    //     return -1.0;
-    // }
-
-	// if (t1 < 0)
-	// {
-	// 	return (t2 > 0) ? t2 : -1;
-	// }
-	// else return t1;
 }
 
 
