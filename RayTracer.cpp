@@ -25,7 +25,7 @@
 using namespace std;
 
 const float EDIST = 40.0;
-const int NUMDIV = 500;
+const int NUMDIV = 1000;
 const int MAX_STEPS = 6;
 const float XMIN = -10.0;
 const float XMAX = 10.0;
@@ -54,7 +54,7 @@ template <typename T> int sgn(T val) {
 //----------------------------------------------------------------------------------
 glm::vec3 trace(Ray ray, int step){
 	glm::vec3 backgroundCol(0);						//Background colour = (0,0,0)
-	glm::vec3 lightPos(-10, 10, -100.0);					//Light's position
+	glm::vec3 lightPos(-10, 25, -100.0);					//Light's position
 	// glm::vec3 lightPos(0, 29, -100.0);					//Light's position
 	glm::vec3 color(0);
 	SceneObject* obj;
@@ -282,14 +282,13 @@ void buildBox(bool setBackNFroundMirror){
 		glm::vec3(0, 0, 0)
 	); //Point D
 
+	backWall->setColor(glm::vec3(0, 0, 0));
+	backWall->setSpecularity(true);
+	backWall->setReflectivity(1, 0.7);
 
 	if (setBackNFroundMirror){
-		puts("worked");
-		backWall->setColor(glm::vec3(0, 0, 0));
 		frontWall->setColor(glm::vec3(0, 0, 0));
-		backWall->setSpecularity(true);
 		frontWall->setSpecularity(true);
-		backWall->setReflectivity(1, 1);
 		frontWall->setReflectivity(1, 1);
 	}
 
@@ -302,7 +301,7 @@ void showConeExample(){
 	Cone *coneNormal = new Cone(glm::vec3(0, -15, -150), 4, 7, 7);
 	Cone *coneDouble = new Cone(glm::vec3(10, -15, -150), 4, 7, 14);
 
-	coneTrunc->setColor(glm::vec3(0, 1, 0));
+	coneTrunc->setColor(glm::vec3(1, 1, 1));
 	coneTrunc->setSpecularity(1);
 
 	coneNormal->setColor(glm::vec3(0, 0, 0));
@@ -330,7 +329,7 @@ void showCylinderExample(){
 	cylinder2->setReflectivity(1, 1);
 	cylinder2->setSpecularity(1);
 
-	cylinder1->setColor(glm::vec3(1, 1, 0));
+	cylinder1->setColor(glm::vec3(1, 1, 1));
 
 	sceneObjects.push_back(cylinder1);		 //Add sphere to scene objects
 	sceneObjects.push_back(cylinder2);		 //Add sphere to scene objects
@@ -389,15 +388,15 @@ void initialize()
 	buildBox(false);
 	// showGlobe();
 	// showConeExample();
-	showCylinderExample();
-	// showSphereExample(); 
+	// showCylinderExample();
+	showSphereExample(); 
 }
 
 int main(int argc, char *argv[]) {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB );
-    glutInitWindowSize(2000, 2000);
-    glutInitWindowPosition(2000, 3000);
+    glutInitWindowSize(500, 500);
+    glutInitWindowPosition(0, 0);
     glutCreateWindow("Raytracing");
     glutDisplayFunc(display);
     initialize();
